@@ -1,5 +1,5 @@
 y-website/
-    index.html
+    index(1).html
     style.css
     script.js
     image/
