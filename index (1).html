@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Keshav ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<script>
+window.addEventListener("load", function () {
+  let music = document.getElementById("bgMusic");
+
+  music.play().catch(() => {
+    console.log("Autoplay blocked on mobile");
+  });
+});
+</script>
+<body>
+<!-- 🎵 BACKGROUND MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PASSWORD PAGE -->
+
+<div id="passwordPage" class="page">
+
+<img src="image/a.png" width="400">
+
+<h1>🎀 My Man's Birthday Surprise 🎀</h1>
+
+<p>Enter Password</p>
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="startSurprise()">
+Open Surprise
+</button>
+
+</div>
+
+<!-- BIRTHDAY PAGE -->
+
+<div id="birthdayPage" class="page hidden">
+
+<img src="image/b.png" width="600">
+
+<h1>🎂 Happy Birthday Mr Keshav ❤️</h1>
+
+<p>
+I have a very special surprise for you!!
+</p>
+
+<button onclick="nextPage()">
+Next ➜
+</button>
+
+</div>
+
+<!-- QUESTION PAGE -->
+
+<div id="questionPage" class="page hidden">
+
+<img src="image/c.png" width="500">
+
+<h2>🤭 Are You Ready For The Surprise?</h2>
+
+<button onclick="showCountdown()">
+YES ❤️
+</button>
+
+<button onclick="alert('Pretty Please 🥺❤️')">
+NO
+</button>
+
+</div>
+
+<!-- COUNTDOWN PAGE -->
+
+<div id="countdownPage" class="page hidden">
+
+<img src="image/d.png" width="500">
+
+<h1 id="count">3</h1>
+
+<p>Get Ready My Love ❤️</p>
+
+</div>
+
+<!-- GIFT PAGE -->
+
+<div id="giftPage" class="page hidden">
+
+<img src="image/e.png" width="520">
+
+<h2>🎁 Choose Your Gift 🎁</h2>
+
+<button onclick="showGift1()">
+Gift 1 ❤️
+</button>
+
+<button onclick="showGift2()">
+Gift 2 💌
+</button>
+
+<button onclick="showGift3()">
+Gift 3 💖
+</button>
+
+</div>
+
+<!-- GIFT 1 PAGE -->
+
+<div id="gift1Page" class="page hidden">
+
+<img src="image/f.png" width="520">
+
+<h2>❤️ Our Memories ❤️</h2>
+
+<p>
+Every moment with you is special.
+</p>
+
+<button onclick="showGift2()">
+Next ➜
+</button>
+
+</div><!-- GIFT 2 PAGE -->
+
+<div id="gift2Page" class="page hidden">
+
+<img src="image/g.png" width="530">
+
+<h2>💌 Gift 2 💌</h2>
+
+<p>
+You make every day brighter and every memory sweeter. ❤️
+</p>
+
+<button onclick="showGift3()">
+Next ➜
+</button>
+
+</div>
+
+<!-- GIFT 3 PAGE -->
+
+<div id="gift3Page" class="page hidden">
+
+<img src="image/h.png" width="530">
+
+<h2>📸 Gift 3 📸</h2>
+
+<p>
+Our journey together is my favourite story. 💕
+</p>
+
+<button onclick="showLetter()">
+Next ➜
+</button>
+
+</div>
+
+<!-- LETTER PAGE -->
+
+<div id="letterPage" class="page hidden">
+
+<img src="image/i.png" width="530">
+
+<h2>💌 My Letter To You 💌</h2>
+
+<p>
+I love you enna saara ❤️<br><br>
+
+You are the best.<br><br>
+
+I always want to be with you.<br><br>
+
+Thank you for loving me and caring for me so much.<br><br>
+
+May God bless you with happiness, success and lots of love.<br><br>
+
+Happy Birthday My Love 🎂❤️
+</p>
+
+<button onclick="showFinal()">
+Continue ❤️
+</button>
+
+</div>
+
+<!-- FINAL PAGE -->
+
+<div id="finalPage" class="page hidden">
+
+<h1>❤️ I LOVE YOU ENA SARA MR MERA PYARA BANDA BCHA�💗💋💋😘 ❤️</h1>
+
+<img src="image/k.png" width="530">
+
+<p>
+Forever Yours,<br><br>
+bchi ❤️
+</p>
+
+<img src="image/l.png" width="530">
+
+<img src="image/m.png" width="530">
+
+<i<img src="image/n.png" width="530">
+
+<button onclick="location.reload()">
+Replay Surprise 🔄
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+<!-- 🎵 MUSIC + SURPRISE CONTROL -->
+<script>
+function startSurprise() {
+  // 🎵 START MUSIC
+  document.getElementById("bgMusic").play();
+
+  // 🔐 YOUR OLD FUNCTION STILL RUNS
+  checkPassword();
+}
+</script>
+</body>
+</html>
